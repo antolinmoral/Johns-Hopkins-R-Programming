@@ -1,0 +1,206 @@
+??solve
+help(solve)
+help.start()
+example(topic)
+example(solve)
+rnorm
+install.packages("knitr")
+library(knitr)
+search()
+install.packages("devtools")
+library(devtools)
+find_rtools()
+set.seed(1)
+rpois(5, 2)
+set.seed(10)
+x <- rbinom(10, 10, 0.5)
+x
+e <- rnorm(10, 0, 20)
+y <- 0.5 + 2 * x + e
+y
+x
+setwd("C:/Users/Antolin/Google Drive/Online Courses/DataScienceCourses/RProgramming/ProgAssign3")
+outcome <- read.csv("outcome-of-care-measures.csv", colClasses = "character")
+head(outcome)
+ncol(outcome)
+nrow(outcome)
+names(outcome)
+View(outcome)
+str(outcome)
+outcome[, 11] <- as.numeric(outcome[, 11])
+hist(outcome[, 11])
+split(outcome,outcome$state)
+split(outcome,outcome$State)
+outcomeSplitted <- split(outcome,outcome$State)
+View(outcome)
+outcomeSplitted["AL"]
+prueba = outcomeSplitted["AL"]
+prueba
+str(prueba)
+prueba$State
+prueba = outcomeSplitted[["AL"]]
+prueba$State
+apply(prueba[,11],1,min)
+prueba[,11]
+apply(prueba[,11],1,min)
+min(prueba[,11])
+?min
+min(prueba[,11],na.rm=TRUE)
+stateMin = stateSelected$State[stateSelected[,11] == min]
+outcomeSplitted <- split(outcome,outcome$State)
+stateSelected = outcomeSplitted[[state]]
+min = min(stateSelected[,11],na.rm=TRUE)
+stateSelected
+str(stateSelected)
+outcome <- read.csv("outcome-of-care-measures.csv", colClasses = "character")
+outcome[, 11] <- as.numeric(outcome[, 11])
+#Mortality rate for pneumonia
+outcome[, 23] <- as.numeric(outcome[, 23])
+#Readmission rates for heart attack
+outcome[, 29] <- as.numeric(outcome[, 29])
+outcomeSplitted <- split(outcome,outcome$State)
+str(outcomeSplitted)
+state = "NA"
+stateSelected = outcomeSplitted[[state]]
+state = "AL"
+stateSelected = outcomeSplitted[[state]]
+min = min(stateSelected[,11],na.rm=TRUE)
+MIN
+min
+stateSelected[stateSelected[,11]==min,2]
+View(stateSelected)
+names(stateSelected)
+1
+stateSelected[stateSelected[,11]==min,2]
+allHospitals = stateSelected[stateSelected[,11]==min,2]
+Hospital <- allHospitals[!is.na(allHospitals)]
+Hospital
+a=11
+stateSelected[,a]
+?sort
+Hospital <- sort(allHospitals[!is.na(allHospitals)])
+Hospital
+source("best.R")
+best("TX", "heart attack")
+best("TX", "heart attack")
+outcome <- read.csv("outcome-of-care-measures.csv", colClasses = "character")
+state = "TX"
+outcome = "heart attack"
+outcome <- read.csv("outcome-of-care-measures.csv", colClasses = "character")
+numColName = 2
+if (outcome == "heart attack"){
+numColOutcome = 11
+}else if (outcome == "pneumonia") {
+numColOutcome = 23
+}else if (outcome == "heart failure") {
+numColOutcome = 29
+}
+numColOutName
+outcome == "heart attack"
+outcome
+best("TX", "heart attack")
+source("best.R")
+best("TX", "heart attack")
+source("best.R")
+best("TX", "heart attack")
+best("TX", "heart failure")
+outcome = "heart attack"
+state = "TX"
+df <- read.csv("outcome-of-care-measures.csv", colClasses = "character")
+numColName = 2
+if (outcome == "heart attack"){
+numColOutcome = 11
+}else if (outcome == "pneumonia") {
+numColOutcome = 23
+}else if (outcome == "heart failure") {
+numColOutcome = 29
+}
+numColOutcome
+df[, numColOutcome] <- as.numeric(df[, numColOutcome])
+dfSplitted <- split(df,df$State)
+stateSelected = dfSplitted[[state]]
+min = min(stateSelected[,numColOutcome],na.rm=TRUE)
+allHospitals = stateSelected[stateSelected[,numColOutcome]==min,numColName]
+Hospital <- sort(allHospitals[!is.na(allHospitals)])
+Hospital
+outcome = "heart failure"
+df <- read.csv("outcome-of-care-measures.csv", colClasses = "character")
+numColName = 2
+if (outcome == "heart attack"){
+numColOutcome = 11
+}else if (outcome == "pneumonia") {
+numColOutcome = 23
+}else if (outcome == "heart failure") {
+numColOutcome = 29
+}
+numColOutcome
+if (outcome == "heart attack"){
+numColOutcome = 11
+}else if (outcome == "pneumonia") {
+numColOutcome = 23
+}else if (outcome == "heart failure") {
+numColOutcome = 36
+}
+df[, numColOutcome] <- as.numeric(df[, numColOutcome])
+dfSplitted <- split(df,df$State)
+stateSelected = dfSplitted[[state]]
+min = min(stateSelected[,numColOutcome],na.rm=TRUE)
+allHospitals = stateSelected[stateSelected[,numColOutcome]==min,numColName]
+Hospital <- sort(allHospitals[!is.na(allHospitals)])
+Hospital
+df[, numColOutcome] <- as.numeric(df[, numColOutcome])
+dfSplitted <- split(df,df$State)
+stateSelected = dfSplitted[[state]]
+stateSelected
+stateSelected$State
+min = min(stateSelected[,numColOutcome],na.rm=TRUE)
+View(stateSelected)
+stateSelected[,numColOutcome]
+df <- read.csv("outcome-of-care-measures.csv", colClasses = "character")
+state
+outcome
+numColName = 2
+#Mortality rate for heart attack
+if (outcome == "heart attack"){
+numColOutcome = 11
+}else if (outcome == "pneumonia") {
+numColOutcome = 23
+}else if (outcome == "heart failure") {
+numColOutcome = 36
+}
+numColOutcome
+min(df[,36])
+min(df[,11])
+df[,11]
+df[,17]
+df[,23]
+source("best.R")
+best("TX", "heart attack")
+best("TX", "heart failure")
+best("MD", "heart attack")
+best("MD", "pneumonia")
+unique(fr$State)
+df <- read.csv("outcome-of-care-measures.csv", colClasses = "character")
+unique(df$State)
+listStates = unique(df$State)
+listStates == state
+state = "TX"
+listStates == state
+sum(listStates == state)
+correctOutcome = ((outcome=="heart attack") or (outcome=="pneumonia") or (outcome=="heart failure"))
+correctOutcome = ((outcome=="heart attack") || (outcome=="pneumonia") || (outcome=="heart failure"))
+correctOtucome
+correctOutcome
+source("best.R")
+best("TX", "heart failure")
+source("best.R")
+best("TX", "heart attack")
+best("TX", "heart failure")
+best("MD", "heart attack")
+best("MD", "pneumonia")
+best("BB", "heart attack")
+best("NY", "hert attack")
+source("http://d396qusza40orc.cloudfront.net/rprog%2Fscripts%2Fsubmitscript3.R")
+submit()
+submit()
+submit()

@@ -1,0 +1,512 @@
+help.start()
+example(topic)
+example(solve)
+rnorm
+install.packages("knitr")
+library(knitr)
+search()
+install.packages("devtools")
+library(devtools)
+find_rtools()
+x <- 1:10
+if(x > 5) {
+x <- 0
+}
+X
+x
+f <- function(x) {
+g <- function(y) {
+y + z
+}
+z <- 4
+x + g(x)
+}
+z <- 10
+f(3)
+directory = "specdata"
+pollutant = "sulfate"
+id = 1:10
+for(i in seq_along(id)) {
+print(id[i])
+}
+directory+"/"+id[1]
+paste(directory,"/")
+paste(directory,"/",collapse=NULL)
+paste(directory,"/",sep="")
+paste(directory,"/",as.string(id[i]),".cvs",sep="")
+paste(directory,"/",as.character(id[i]),".cvs",sep="")
+name = paste(directory,"/",as.character(id[i]),".cvs",sep="")
+name
+read.csv(name)
+setwd("C:/Users/Antolin/Google Drive/Online Courses/DataScienceCourses/RProgramming/ProgAssign1")
+setwd("C:/Users/Antolin/Google Drive/Online Courses/DataScienceCourses/RProgramming/ProgAssign1")
+read.csv(name)
+name = paste(directory,"/",as.character(id[i]),".csv",sep="")
+read.csv(name)
+name = paste("./",directory,"/",as.character(id[i]),".csv",sep="")
+print(name)
+read.csv(name)
+name
+?as.character
+as.character(id[i])
+as.character(id[i],length=3)
+sprintf("%03d", id[i])
+name = paste("./",directory,"/",sprintf("%03d", id[i]),".csv",sep="")
+print(name)
+read.csv(name)
+frame = read.csv(name)
+names(frame)
+View(frame)
+frame[pollutant]
+frame[pollutant] != NA
+flag = is.na(frame[pollutant])
+flag
+flag = is.na(frame[pollutant])
+pollutant = frame[pollutant]
+pollutantNoNA = pollutant[!flag]
+pollutantNoNA
+pollutantAll = []
+pollutantAll = NULL
+c(pollutantAll, pollutantNoNA)
+pollutantAll = c(pollutantAll, pollutantNoNA)
+directory = "specdata"
+pollutant = "sulfate"
+id = 1:10
+pollutantAll = NULL
+for(i in seq_along(id)) {
+name = paste("./",directory,"/",sprintf("%03d", id[i]),".csv",sep="")
+print(name)
+frame = read.csv(name)
+flag = is.na(frame[pollutant])
+pollutant = frame[pollutant]
+pollutantNoNA = pollutant[!flag]
+pollutantAll = c(pollutantAll, pollutantNoNA)
+}
+mean(pollutantAll)
+directory = "specdata"
+pollutant = "nitrate"
+id = 23
+pollutantAll = NULL
+for(i in seq_along(id)) {
+name = paste("./",directory,"/",sprintf("%03d", id[i]),".csv",sep="")
+print(name)
+frame = read.csv(name)
+flag = is.na(frame[pollutant])
+pollutant = frame[pollutant]
+pollutantNoNA = pollutant[!flag]
+pollutantAll = c(pollutantAll, pollutantNoNA)
+}
+mean(pollutantAll)
+directory = "specdata"
+pollutant = "nitrate"
+id = 1:10
+pollutantAll = NULL
+for(i in seq_along(id)) {
+name = paste("./",directory,"/",sprintf("%03d", id[i]),".csv",sep="")
+print(name)
+frame = read.csv(name)
+flag = is.na(frame[pollutant])
+pollutant = frame[pollutant]
+pollutantNoNA = pollutant[!flag]
+pollutantAll = c(pollutantAll, pollutantNoNA)
+}
+directory = "specdata"
+pollutant = "nitrate"
+id = 1:10
+pollutantAll = NULL
+for(i in seq_along(id)) {
+name = paste("./",directory,"/",sprintf("%03d", id[i]),".csv",sep="")
+print(name)
+frame = read.csv(name)
+flag = is.na(frame[pollutant])
+pollutant = frame[pollutant]
+pollutantNoNA = pollutant[!flag]
+pollutantAll = c(pollutantAll, pollutantNoNA)
+}
+seq_along(id)
+name = paste("./",directory,"/",sprintf("%03d", id[i]),".csv",sep="")
+name
+print(name)
+frame = read.csv(name)
+flag = is.na(frame[pollutant])
+View(frame)
+frame[pollutant]
+frame[pollutant]
+names(frame)
+pollutant
+directory = "specdata"
+pollutant = "nitrate"
+id = 1:10
+valuesPollutantAll = NULL
+for(i in seq_along(id)) {
+name = paste("./",directory,"/",sprintf("%03d", id[i]),".csv",sep="")
+print(name)
+frame = read.csv(name)
+flag = is.na(frame[pollutant])
+valuesPollutant = frame[pollutant]
+valuesPollutantNoNA = valuesPollutant[!flag]
+valuesPollutantAll = c(valuesPollutantAll, valuesPollutantNoNA)
+}
+mean(valuesPollutantAll)
+directory = "specdata"
+pollutant = "sulfate"
+id = 1:10
+valuesPollutantAll = NULL
+for(i in seq_along(id)) {
+name = paste("./",directory,"/",sprintf("%03d", id[i]),".csv",sep="")
+print(name)
+frame = read.csv(name)
+flag = is.na(frame[pollutant])
+valuesPollutant = frame[pollutant]
+valuesPollutantNoNA = valuesPollutant[!flag]
+valuesPollutantAll = c(valuesPollutantAll, valuesPollutantNoNA)
+}
+mean(valuesPollutantAll)
+directory = "specdata"
+pollutant = "nitrate"
+id = 70:72
+valuesPollutantAll = NULL
+for(i in seq_along(id)) {
+name = paste("./",directory,"/",sprintf("%03d", id[i]),".csv",sep="")
+print(name)
+frame = read.csv(name)
+flag = is.na(frame[pollutant])
+valuesPollutant = frame[pollutant]
+valuesPollutantNoNA = valuesPollutant[!flag]
+valuesPollutantAll = c(valuesPollutantAll, valuesPollutantNoNA)
+}
+mean(valuesPollutantAll)
+directory = "specdata"
+pollutant = "nitrate"
+id = 70:72
+source("pollutantmean.R")
+source("pollutantmean.R")
+f <- pollutantmean(directory, pollutant, id=1:332)
+{
+valuesPollutantAll = NULL
+for(i in seq_along(id)) {
+name = paste("./",directory,"/",sprintf("%03d", id[i]),".csv",sep="")
+print(name)
+frame = read.csv(name)
+flag = is.na(frame[pollutant])
+valuesPollutant = frame[pollutant]
+valuesPollutantNoNA = valuesPollutant[!flag]
+valuesPollutantAll = c(valuesPollutantAll, valuesPollutantNoNA)
+}
+mean(valuesPollutantAll)
+}
+source("pollutantmean.R")
+source("pollutantmean.R")
+pollutantmean("specdata", "sulfate", 1:10)
+pollutantmean("specdata", "nitrate", 70:72)
+source("pollutantmean.R")
+pollutantmean("specdata", "nitrate", 70:72)
+pollutantmean("specdata", "nitrate", 23)
+ls
+list.files(directory)
+good = complete.cases(frame)
+good
+as.numeric(good)
+sum(as.numeric(good))
+sum(as.numeric(complete.cases(frame)))
+x = data.frame(id,numCases)
+numCases  = sum(as.numeric(complete.cases(frame)))
+numberCompleteCases = c(numberCompleteCases,numCases)
+x = data.frame(id,numCases)
+View(x)
+directory = "specdata"
+id = c(2, 4, 8, 10, 12)
+numberCompleteCases = NULL
+for(i in seq_along(id)) {
+name = paste("./",directory,"/",sprintf("%03d", id[i]),".csv",sep="")
+frame = read.csv(name)
+numCases  = sum(as.numeric(complete.cases(frame)))
+numberCompleteCases = c(numberCompleteCases,numCases)
+}
+dataframe(id,nobs=numberCompleteCases)
+result = data.frame(id,nobs=numberCompleteCases)
+directory = "specdata"
+id = c(2, 4, 8, 10, 12)
+numberCompleteCases = NULL
+for(i in seq_along(id)) {
+name = paste("./",directory,"/",sprintf("%03d", id[i]),".csv",sep="")
+frame = read.csv(name)
+numCases  = sum(as.numeric(complete.cases(frame)))
+numberCompleteCases = c(numberCompleteCases,numCases)
+}
+result = data.frame(id,nobs=numberCompleteCases)
+View(result)
+directory = "specdata"
+id = c(2, 4, 8, 10, 12)
+source("complete.R")
+complete("specdata", 1)
+source("complete.R")
+complete("specdata", 1)
+complete("specdata", c(2, 4, 8, 10, 12))
+complete("specdata", 30:25)
+complete("specdata", 3)
+directory = "specdata"
+threshold = 0
+fichCompletos = complete(directory, threshold)
+fichCompletos = complete(directory)
+fichCompletos$id
+fichCompletos$nobs
+fichSupTh = fichCompletos[fichCompletos$nobs > threshold]
+fichCompletos$nobs > threshold
+fichCompletos[fichCompletos$nobs > threshold,]
+fichSupThr = fichCompletos[fichCompletos$nobs > threshold,]
+View(fichSupThr)
+View(fichCompletos)
+View(fichSupThr)
+?cor
+directory = "specdata"
+threshold = 0
+fichCompletos = complete(directory)
+fichSupThr    = fichCompletos[fichCompletos$nobs > threshold,]
+vectorSulfate = NULL
+vectorNitrate = NULL
+seq_along(fichSupThr$id)
+for(i in seq_along(fichSupThr$id)) {
+name = paste("./",directory,"/",sprintf("%03d", id[i]),".csv",sep="")
+file = read.csv(name)
+vectorNitrate = c(vectorNitrate, file$nitrate)
+vectorSulfate = c(vectorSulfate, file$sulfate)
+}
+cor(vectorNitrate,vectorSulfate)
+vectorNitrate
+vectorSulfate = NULL
+vectorNitrate = NULL
+for(i in seq_along(fichSupThr$id)) {
+name = paste("./",directory,"/",sprintf("%03d", id[i]),".csv",sep="")
+file = read.csv(name)
+valuesNitrate = file$nitrate( ! is.na(file$nitrate]) )
+valuesSulfate = file$sulfate( ! is.na(file$sulfate]) )
+vectorNitrate = c(vectorNitrate, valuesNitrate)
+vectorSulfate = c(vectorSulfate, valuesSulfate)
+}
+directory = "specdata"
+threshold = 0
+fichCompletos = complete(directory)
+fichSupThr    = fichCompletos[fichCompletos$nobs > threshold,]
+vectorSulfate = NULL
+vectorNitrate = NULL
+seq_along(fichSupThr$id))
+seq_along(fichSupThr$id)
+name = paste("./",directory,"/",sprintf("%03d", fichSupThr$id[i]),".csv",sep="")
+file = read.csv(name)
+valuesNitrate = file$nitrate( ! is.na(file$nitrate]) )
+valuesNitrate = file$nitrate[! is.na(file$nitrate]) ]
+file$nitrate
+flag = is.na(file$nitrate)
+file$nitrate[! flag]
+file$nitrate[! is.na(file$nitrate)]
+valuesSulfate = file$sulfate[! is.na(file$sulfate)]
+valuesNitrate = file$nitrate[! is.na(file$nitrate)]
+valuesSulfate = file$sulfate[! is.na(file$sulfate)]
+vectorNitrate = c(vectorNitrate, valuesNitrate)
+vectorSulfate = c(vectorSulfate, valuesSulfate)
+cor(vectorNitrate,vectorSulfate)
+directory = "specdata"
+threshold = 0
+fichCompletos = complete(directory)
+fichSupThr    = fichCompletos[fichCompletos$nobs > threshold,]
+vectorSulfate = NULL
+vectorNitrate = NULL
+for(i in seq_along(fichSupThr$id)) {
+name = paste("./",directory,"/",sprintf("%03d", fichSupThr$id[i]),".csv",sep="")
+file = read.csv(name)
+good = complete.cases(file)
+valuesNitrate = file$nitrate[good]
+valuesSulfate = file$sulfate[good]
+vectorNitrate = c(vectorNitrate, valuesNitrate)
+vectorSulfate = c(vectorSulfate, valuesSulfate)
+}
+cor(vectorNitrate,vectorSulfate)
+cr = cor(vectorNitrate,vectorSulfate)
+summary(cr)
+head(cr)
+nrow(fichSupThr)
+directory = "specdata"
+source("corr.R")
+source("complete.R")
+cr <- corr("specdata", 150)
+corr <- function(directory, threshold = 0) {
+## 'directory' is a character vector of length 1 indicating
+## the location of the CSV files
+## 'threshold' is a numeric vector of length 1 indicating the
+## number of completely observed observations (on all
+## variables) required to compute the correlation between
+## nitrate and sulfate; the default is 0
+## Return a numeric vector of correlations
+fichCompletos = complete(directory)
+fichSupThr    = fichCompletos[fichCompletos$nobs > threshold,]
+if nrow(fichSupThr = 0)
+cr = vector('numeric')
+else{
+vectorSulfate = NULL
+vectorNitrate = NULL
+for(i in seq_along(fichSupThr$id)) {
+name = paste("./",directory,"/",sprintf("%03d", fichSupThr$id[i]),".csv",sep="")
+file = read.csv(name)
+good = complete.cases(file)
+valuesNitrate = file$nitrate[good]
+valuesSulfate = file$sulfate[good]
+vectorNitrate = c(vectorNitrate, valuesNitrate)
+vectorSulfate = c(vectorSulfate, valuesSulfate)
+}
+cr = cor(vectorNitrate,vectorSulfate)
+}
+}
+corr <- function(directory, threshold = 0) {
+## 'directory' is a character vector of length 1 indicating
+## the location of the CSV files
+## 'threshold' is a numeric vector of length 1 indicating the
+## number of completely observed observations (on all
+## variables) required to compute the correlation between
+## nitrate and sulfate; the default is 0
+## Return a numeric vector of correlations
+fichCompletos = complete(directory)
+fichSupThr    = fichCompletos[fichCompletos$nobs > threshold,]
+if nrow(fichSupThr = 0){
+corr = vector('numeric')
+} else{
+vectorSulfate = NULL
+vectorNitrate = NULL
+for(i in seq_along(fichSupThr$id)) {
+name = paste("./",directory,"/",sprintf("%03d", fichSupThr$id[i]),".csv",sep="")
+file = read.csv(name)
+good = complete.cases(file)
+valuesNitrate = file$nitrate[good]
+valuesSulfate = file$sulfate[good]
+vectorNitrate = c(vectorNitrate, valuesNitrate)
+vectorSulfate = c(vectorSulfate, valuesSulfate)
+}
+corr = cor(vectorNitrate,vectorSulfate)
+}
+}
+source("corr.R")
+source("complete.R")
+cr <- corr("specdata", 150)
+corr <- function(directory, threshold = 0) {
+## 'directory' is a character vector of length 1 indicating
+## the location of the CSV files
+## 'threshold' is a numeric vector of length 1 indicating the
+## number of completely observed observations (on all
+## variables) required to compute the correlation between
+## nitrate and sulfate; the default is 0
+## Return a numeric vector of correlations
+fichCompletos = complete(directory)
+fichSupThr    = fichCompletos[fichCompletos$nobs > threshold,]
+if (nrow(fichSupThr) == 0){
+correlation = vector('numeric')
+} else{
+vectorSulfate = NULL
+vectorNitrate = NULL
+for(i in seq_along(fichSupThr$id)) {
+name = paste("./",directory,"/",sprintf("%03d", fichSupThr$id[i]),".csv",sep="")
+file = read.csv(name)
+good = complete.cases(file)
+valuesNitrate = file$nitrate[good]
+valuesSulfate = file$sulfate[good]
+vectorNitrate = c(vectorNitrate, valuesNitrate)
+vectorSulfate = c(vectorSulfate, valuesSulfate)
+}
+correlation = cor(vectorNitrate,vectorSulfate)
+}
+correlation
+}
+source("corr.R")
+source("complete.R")
+cr <- corr("specdata", 150)
+head(cr)
+head(cr)
+summary(cr)
+cr <- corr("specdata", 150)
+source("corr.R")
+source("complete.R")
+cr <- corr("specdata", 150)
+corr <- function(directory, threshold = 0) {
+## 'directory' is a character vector of length 1 indicating
+## the location of the CSV files
+## 'threshold' is a numeric vector of length 1 indicating the
+## number of completely observed observations (on all
+## variables) required to compute the correlation between
+## nitrate and sulfate; the default is 0
+## Return a numeric vector of correlations
+files <- list.files(directory, full.names=TRUE)
+corred = vector(mode='numeric', length=0)
+for (i in 1:332) {
+inuse = read.csv(files([i]))
+if (sum(complete.cases(inuse)) >= threshold)
+cornow = cor(inuse$sulfate,inuse$nitrate,use="pairwise.complete.obs")
+corred = c(corred,cornow)
+}else{
+next
+}
+}
+}
+corr <- function(directory, threshold = 0) {
+## 'directory' is a character vector of length 1 indicating
+## the location of the CSV files
+## 'threshold' is a numeric vector of length 1 indicating the
+## number of completely observed observations (on all
+## variables) required to compute the correlation between
+## nitrate and sulfate; the default is 0
+## Return a numeric vector of correlations
+files <- list.files(directory, full.names=TRUE)
+corred = vector(mode='numeric', length=0)
+for (i in 1:332)
+{
+inuse = read.csv(files([i]))
+if (sum(complete.cases(inuse)) >= threshold){
+cornow = cor(inuse$sulfate,inuse$nitrate,use="pairwise.complete.obs")
+corred = c(corred,cornow)
+}else{
+next
+}
+}
+}
+corr <- function(directory, threshold = 0) {
+## 'directory' is a character vector of length 1 indicating
+## the location of the CSV files
+## 'threshold' is a numeric vector of length 1 indicating the
+## number of completely observed observations (on all
+## variables) required to compute the correlation between
+## nitrate and sulfate; the default is 0
+## Return a numeric vector of correlations
+files <- list.files(directory, full.names=TRUE)
+corred = vector(mode="numeric", length=0)
+for (i in 1:332)
+{
+inuse <- read.csv(files[i])
+if (sum(complete.cases(inuse)) >= threshold){
+cornow = cor(inuse$sulfate,inuse$nitrate,use="pairwise.complete.obs")
+corred = c(corred,cornow)
+}else{
+next
+}
+}
+}
+source("corr.R")
+source("complete.R")
+cr <- corr("specdata", 150)
+head(cr)
+source("corr.R")
+source("complete.R")
+cr <- corr("specdata", 150)
+source("corr.R")
+source("complete.R")
+cr <- corr("specdata", 150)
+head(cr)
+summary(cr)
+source("http://d396qusza40orc.cloudfront.net/rprog%2Fscripts%2Fsubmitscript1.R")
+submit()
+submit()
+submit()
+submit()
+submit()
+submit()
+submit()
+submit()
+submit()
+submit()
